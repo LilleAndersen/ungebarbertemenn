@@ -1,0 +1,101 @@
+$primary-color: #bbb;
+
+/* SCSS HEX */
+$lapis-lazuli: #446493ff;
+$night: #141012ff;
+$black: #080505ff;
+$platinum: #E2E2E2ff;
+$vista-blue: #7B9BC8ff;
+
+h1 
+{
+    color: $primary-color;
+}
+
+body
+{
+    background-color: gray;
+    margin: 0;
+}
+
+#start
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Centered content
+    justify-content: flex-end;
+
+    text-decoration: none;
+    text-align: center;
+
+    background-image: url("/bilde/ai-ubm.png");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: bottom;
+    background-color: $night;
+
+    width: 100vw;
+    height: 100vh;
+
+
+
+    .start-btn
+    {
+        display: inline-block; // Fixes collapsing marges issue
+        color: $night;
+        background-color: $platinum;
+        margin: 5vh 25px;
+        padding: 15px 50px;
+        min-width: 5vw;
+        border-radius: 0;
+        text-decoration: none;
+        border:2px solid transparent;
+
+        
+
+        &:hover
+        {
+            text-decoration: underline;
+        }
+
+        transition: ease 1000ms !important;
+
+        &:hover
+        {
+            color: $black !important;
+            background-color: $lapis-lazuli !important;
+            border: 2px $black solid;
+        
+        }
+    }
+
+    #header
+    {
+        -ms-flex-align: start;
+    }
+}
+
+#item1
+{
+    align-self: flex-start;
+    flex-grow: 8;
+    text-align: left;
+
+}
+
+#item2
+{
+    
+    align-self: flex-start;
+    flex-grow: 1;
+
+}
+
+#item3
+{
+    
+    align-self: flex-end;
+    flex-grow: 1;
+    color: pink;
+
+}

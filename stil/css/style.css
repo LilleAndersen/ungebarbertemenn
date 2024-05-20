@@ -1,0 +1,67 @@
+/* SCSS HEX */
+h1 {
+  color: #bbb;
+}
+
+body {
+  background-color: gray;
+  margin: 0;
+}
+
+#start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+  text-align: center;
+  background-image: url("/bilde/ai-ubm.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: bottom;
+  background-color: #141012;
+  width: 100vw;
+  height: 100vh;
+}
+#start .start-btn {
+  display: inline-block;
+  color: #141012;
+  background-color: #e2e2e2;
+  margin: 5vh 25px;
+  padding: 15px 50px;
+  min-width: 5vw;
+  border-radius: 0;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: ease 1000ms !important;
+}
+#start .start-btn:hover {
+  text-decoration: underline;
+}
+#start .start-btn:hover {
+  color: #080505 !important;
+  background-color: #446493 !important;
+  border: 2px #080505 solid;
+}
+#start #header {
+  -ms-flex-align: start;
+}
+
+#item1 {
+  align-self: flex-start;
+  flex-grow: 8;
+  text-align: left;
+}
+
+#item2 {
+  align-self: flex-start;
+  flex-grow: 1;
+}
+
+#item3 {
+  align-self: flex-end;
+  flex-grow: 1;
+  color: pink;
+}
+
+/*# sourceMappingURL=style.css.map */
